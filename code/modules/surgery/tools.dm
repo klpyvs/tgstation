@@ -465,10 +465,10 @@
 	var/mob/living/carbon/CM = M
 	var/mob/living/carbon/CU = user
 
-	if(!check_zone(CU.zone_selected) == BODY_ZONE_HEAD)
+	if(check_zone(CU.zone_selected) != BODY_ZONE_HEAD)
 		return ..()
 
-	if(CM.body_position != LYING_DOWN  || (CM.health >= 0 && !HAS_TRAIT(CM, TRAIT_FAKEDEATH)))
+	if(CM.body_position != LYING_DOWN  || (CM.health > CM.crit_threshold && !HAS_TRAIT(CM, TRAIT_FAKEDEATH)))
 		return ..()
 
 	CU.do_cpr(CM, TRUE)
