@@ -50686,7 +50686,7 @@
 /area/maintenance/department/engine)
 "kHO" = (
 /obj/structure/bed/dogbed/mutt,
-/mob/living/simple_animal/pet/dog/mutt/captains,
+/mob/living/simple_animal/hostile/mutt/captains,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/captain)
 "kHP" = (

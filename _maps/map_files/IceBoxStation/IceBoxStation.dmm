@@ -50271,7 +50271,7 @@
 /area/science/xenobiology)
 "hec" = (
 /obj/structure/bed/dogbed/mutt,
-/mob/living/simple_animal/pet/dog/mutt/captains,
+/mob/living/simple_animal/hostile/mutt/captains,
 /turf/open/floor/wood,
 /area/crew_quarters/heads/captain)
 "heL" = (
