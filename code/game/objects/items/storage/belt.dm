@@ -132,12 +132,14 @@
 	icon_state = "medical"
 	inhand_icon_state = "medical"
 	worn_icon_state = "medical"
+	content_overlays = TRUE
 
 /obj/item/storage/belt/medical/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
-	STR.max_combined_w_class = 21
+	STR.max_combined_w_class = 32
+	STR.max_items = 10
 	STR.set_holdable(list(
 		/obj/item/healthanalyzer,
 		/obj/item/dnainjector,
@@ -192,6 +194,24 @@
 		/obj/item/shears,
 		/obj/item/stack/sticky_tape //surgical tape
 		))
+
+/obj/item/storage/belt/medical/cmo
+	name = "\improper Chief Medical Officer's medical belt" //"the Chief Engineer's toolbelt", because "Chief Engineer's toolbelt" is not a proper noun
+	desc = "Holds the CMO's medical equipment and has a snazzy Runtime belt buckle."
+	icon_state = "medical_cmo"
+	inhand_icon_state = "medical_cmo"
+	worn_icon_state = "medical_cmo"
+
+/obj/item/storage/belt/medical/cmo/full/PopulateContents()
+	new /obj/item/surgical_drapes(src)
+	new /obj/item/healthanalyzer/advanced(src)
+	new /obj/item/scalpel/advanced(src)
+	new /obj/item/retractor/advanced(src)
+	new /obj/item/cautery/advanced(src)
+	new /obj/item/bag_valve_mask(src)
+	new /obj/item/bonesetter(src)
+	new /obj/item/blood_filter(src)
+	update_icon()
 
 /obj/item/storage/belt/medical/paramedic/PopulateContents()
 	new /obj/item/sensor_device(src)
@@ -421,9 +441,9 @@
 		/obj/item/food/syndicake,
 		/obj/item/food/spacetwinkie,
 		/obj/item/food/cheesiehonkers,
-		/obj/item/reagent_containers/food/snacks/nachos,
-		/obj/item/reagent_containers/food/snacks/cheesynachos,
-		/obj/item/reagent_containers/food/snacks/cubannachos,
+		/obj/item/food/nachos,
+		/obj/item/food/cheesynachos,
+		/obj/item/food/cubannachos,
 		/obj/item/food/nugget,
 		/obj/item/food/spaghetti/pastatomato,
 		/obj/item/reagent_containers/food/snacks/rofflewaffles,

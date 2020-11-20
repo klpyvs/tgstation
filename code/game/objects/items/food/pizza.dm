@@ -6,11 +6,13 @@
 	food_reagents = list(/datum/reagent/consumable/nutriment = 28, /datum/reagent/consumable/nutriment/protein = 3, /datum/reagent/consumable/tomatojuice = 6, /datum/reagent/consumable/nutriment/vitamin = 5)
 	tastes = list("crust" = 1, "tomato" = 1, "cheese" = 1)
 	foodtypes = GRAIN | DAIRY | VEGETABLES
+	/// type is spawned 6 at a time and replaces this pizza when processed by cutting tool
 	var/obj/item/food/pizzaslice/slice_type
 
 /obj/item/food/pizza/MakeProcessable()
 	if (slice_type)
 		AddElement(/datum/element/processable, TOOL_KNIFE, slice_type, 6, 30)
+		AddElement(/datum/element/processable, TOOL_SAW, slice_type, 6, 45)
 		AddElement(/datum/element/processable, TOOL_SCALPEL, slice_type, 6, 60)
 
 // Pizza Slice
@@ -173,7 +175,8 @@
 	tastes = list("stale crust" = 1, "rancid cheese" = 2, "mushroom" = 1)
 	foodtypes = GRAIN | VEGETABLES | DAIRY | GROSS
 
-/obj/item/food/pizzaslice/moldy/MakeProcessable()
+/obj/item/food/pizzaslice/moldy/Initialize()
+	. = ..()
 	AddElement(/datum/element/swabable, CELL_LINE_TABLE_MOLD, CELL_VIRUS_TABLE_GENERIC, rand(2,4), 25)
 
 
@@ -201,7 +204,7 @@
 	playsound(user, "desecration", 50, TRUE, -1)
 
 /obj/item/food/proc/i_kill_you(obj/item/I, mob/living/user)
-	if(istype(I, /obj/item/reagent_containers/food/snacks/pineappleslice))
+	if(istype(I, /obj/item/food/pineappleslice))
 		to_chat(user, "<font color='red' size='7'>If you want something crazy like pineapple, I'll kill you.</font>") //this is in bigger text because it's hard to spam something that gibs you, and so that you're perfectly aware of the reason why you died
 		user.gib() //if you want something crazy like pineapple, i'll kill you
 	else if(istype(I, /obj/item/reagent_containers/food/snacks/grown/mushroom) && iscarbon(user))
