@@ -1787,6 +1787,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "adp" = (
@@ -2523,6 +2524,12 @@
 /area/medical/sleeper)
 "aez" = (
 /obj/effect/turf_decal/trimline/blue/filled/warning,
+/obj/machinery/camera{
+	c_tag = "Medbay - Surgery A";
+	dir = 1;
+	name = "medbay camera";
+	network = list("ss13","medbay")
+	},
 /turf/open/floor/plasteel/white,
 /area/medical/sleeper)
 "aeA" = (
@@ -2607,12 +2614,6 @@
 	dir = 4
 	},
 /obj/machinery/iv_drip,
-/obj/machinery/camera{
-	c_tag = "Medbay - Surgery A";
-	dir = 1;
-	name = "medbay camera";
-	network = list("ss13","medbay")
-	},
 /turf/open/floor/plasteel/white,
 /area/medical/sleeper)
 "aeH" = (
@@ -11518,9 +11519,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmospherics_engine)
-"atV" = (
-/turf/closed/wall/r_wall,
-/area/medical/patients_rooms)
 "atW" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral{
@@ -35070,7 +35068,7 @@
 /area/crew_quarters/kitchen)
 "bhQ" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/food/snacks/dough,
+/obj/item/food/dough,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
 /area/crew_quarters/kitchen)
@@ -160791,11 +160789,11 @@ ahC
 ajT
 ahC
 dtK
+ahC
 dtK
 dtK
 dtK
 dtK
-atV
 dtK
 dtK
 dtK
@@ -161548,7 +161546,7 @@ qmT
 ael
 aSk
 aez
-aeN
+qdq
 aeQ
 afM
 dkA
@@ -161805,7 +161803,7 @@ aRB
 ael
 acw
 aeo
-qdq
+aeN
 aeU
 afP
 dkv
@@ -162062,8 +162060,8 @@ acw
 aeq
 uZU
 aeG
-vTA
-jTx
+qdq
+cPv
 afM
 dkv
 dro
@@ -162320,7 +162318,7 @@ aWh
 wqd
 hFL
 vTA
-cPv
+jTx
 afP
 dkv
 dro
