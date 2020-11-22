@@ -1288,7 +1288,7 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/machinery/airalarm/kitchen_cold_room{
-	pixel_z = 24
+	pixel_y = 24
 	},
 /turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
 /area/medical/coldroom)
