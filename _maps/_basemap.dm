@@ -4,7 +4,13 @@
 
 #ifndef LOWMEMORYMODE
 	#ifdef ALL_MAPS
+		#include "map_files\Mining\Lavaland.dmm"
+		#include "map_files\debug\runtimestation.dmm"
+		#include "map_files\debug\multiz.dmm"
 		#include "map_files\Deltastation\DeltaStationKiwi.dmm"
+		#include "map_files\MetaStation\MetaStation.dmm"
+		#include "map_files\PubbyStation\PubbyStation.dmm"
+		#include "map_files\IceBoxStation\IceBoxStation.dmm"
 
 		#ifdef CIBUILDING
 			#include "templates.dm"
