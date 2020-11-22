@@ -2205,9 +2205,6 @@
 /turf/open/floor/plasteel,
 /area/security/checkpoint/medical)
 "adZ" = (
-/obj/structure/disposalpipe/junction{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
@@ -2220,6 +2217,10 @@
 /obj/item/circuitboard/computer/operating,
 /obj/item/circuitboard/computer/operating,
 /obj/item/circuitboard/computer/operating,
+/obj/structure/disposalpipe/sorting/mail/flip{
+	dir = 8;
+	sortType = 26
+	},
 /turf/open/floor/plasteel,
 /area/maintenance/starboard/aft)
 "aea" = (
@@ -78417,11 +78418,6 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "cKF" = (
-/obj/structure/disposalpipe/sorting/mail{
-	dir = 1;
-	name = "Medbay Junction";
-	sortType = 9
-	},
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
@@ -78429,6 +78425,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 5
+	},
+/obj/structure/disposalpipe/sorting/mail{
+	dir = 1;
+	name = "Medbay Junction";
+	sortType = 2
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
