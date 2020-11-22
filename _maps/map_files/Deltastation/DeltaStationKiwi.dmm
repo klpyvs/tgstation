@@ -1911,14 +1911,14 @@
 	pixel_x = -3;
 	pixel_y = -3
 	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/machinery/door/window/southleft{
 	name = "First-Aid Supplies";
 	req_access_txt = "5"
 	},
 /obj/effect/turf_decal/trimline/blue/filled/line,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/medical/storage)
 "adB" = (
@@ -2614,6 +2614,9 @@
 	dir = 4
 	},
 /obj/machinery/iv_drip,
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 8
+	},
 /turf/open/floor/plasteel/white,
 /area/medical/sleeper)
 "aeH" = (
@@ -2758,12 +2761,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /turf/open/floor/plasteel/white,
 /area/medical/storage)
-"aeU" = (
-/obj/effect/turf_decal/trimline/blue/filled/corner{
-	dir = 1
-	},
-/turf/open/floor/plasteel/white,
-/area/medical/medbay/central)
 "aeV" = (
 /obj/machinery/light{
 	dir = 1
@@ -94975,7 +94972,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 9
 	},
-/obj/machinery/vending/medical/chems,
+/obj/machinery/vending/drugs,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "dBl" = (
@@ -109979,6 +109976,22 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/science/misc_lab/range)
+"jId" = (
+/obj/structure/table/glass,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/sleeper)
 "jIk" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/yellow{
@@ -110845,6 +110858,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/science/misc_lab/range)
+"lXY" = (
+/obj/effect/turf_decal/trimline/blue/filled/warning,
+/turf/open/floor/plasteel/white,
+/area/medical/sleeper)
 "lYb" = (
 /turf/open/floor/plasteel/white,
 /area/medical/pharmacy)
@@ -112714,6 +112731,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
+"rfc" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
 "rfe" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -113760,6 +113786,20 @@
 	},
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
+"ukt" = (
+/obj/machinery/stasis,
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/sleeper)
 "ukR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -160510,8 +160550,8 @@ dAh
 cNI
 cHW
 vTA
-aRB
-aRB
+jId
+jId
 cXW
 aRp
 adV
@@ -160767,7 +160807,7 @@ dAh
 cNJ
 cHW
 vTA
-xAi
+ukt
 adn
 adD
 adM
@@ -161802,9 +161842,9 @@ aRB
 aRB
 ael
 acw
-aeo
+lXY
 aeN
-aeU
+aeQ
 afP
 dkv
 dma
@@ -162061,7 +162101,7 @@ aeq
 uZU
 aeG
 qdq
-cPv
+rfc
 afM
 dkv
 dro
