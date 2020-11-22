@@ -2607,6 +2607,12 @@
 	dir = 4
 	},
 /obj/machinery/iv_drip,
+/obj/machinery/camera{
+	c_tag = "Medbay - Surgery A";
+	dir = 1;
+	name = "medbay camera";
+	network = list("ss13","medbay")
+	},
 /turf/open/floor/plasteel/white,
 /area/medical/sleeper)
 "aeH" = (
@@ -26260,18 +26266,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/qm)
-"aSB" = (
-/obj/effect/turf_decal/trimline/blue/filled/corner{
-	dir = 8
-	},
-/obj/machinery/camera{
-	c_tag = "Medbay - Surgery A";
-	dir = 1;
-	name = "medbay camera";
-	network = list("ss13","medbay")
-	},
-/turf/open/floor/plasteel/white,
-/area/medical/sleeper)
 "aSC" = (
 /obj/structure/bed,
 /obj/item/clothing/suit/straight_jacket,
@@ -99474,6 +99468,11 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 6
 	},
+/obj/machinery/camera{
+	c_tag = "Virology - Lab";
+	name = "virology camera";
+	network = list("ss13","medbay")
+	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "dLl" = (
@@ -109262,20 +109261,6 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plasteel,
 /area/security/prison)
-"hBm" = (
-/obj/effect/turf_decal/tile/blue,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -24
-	},
-/turf/open/floor/plasteel/white,
-/area/medical/medbay/central)
 "hBB" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/tank_holder/extinguisher,
@@ -110069,6 +110054,17 @@
 	},
 /turf/open/floor/plating,
 /area/science/mixing)
+"jTx" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = 26
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
 "jUo" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Holodeck Access"
@@ -114097,6 +114093,13 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
+"vcd" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/machinery/newscaster{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
 "vec" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/kirbyplants/random,
@@ -161559,7 +161562,7 @@ nUY
 cXO
 pif
 cXO
-cXO
+vcd
 dAg
 cXO
 aWb
@@ -161801,7 +161804,7 @@ aRB
 aRB
 ael
 acw
-aSB
+aeo
 qdq
 aeU
 afP
@@ -162060,9 +162063,9 @@ aeq
 uZU
 aeG
 vTA
-cPv
+jTx
 afM
-hBm
+dkv
 dro
 dsN
 dtQ
