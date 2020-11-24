@@ -229,6 +229,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	GLOB.department_security_spawns -= src
 	return ..()
 
+/obj/effect/landmark/start/depsec/service
+	name = "service_sec"
+
 /obj/effect/landmark/start/depsec/supply
 	name = "supply_sec"
 
