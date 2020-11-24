@@ -14,8 +14,8 @@
 	stop_automated_movement_when_pulled = 1
 	stat_attack = SOFT_CRIT
 	robust_searching = 1
-	health = 250
-	maxHealth = 250
+	health = 200
+	maxHealth = 200
 	harm_intent_damage = 15
 	obj_damage = 0
 	melee_damage_lower = 15

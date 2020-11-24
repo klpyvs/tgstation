@@ -25021,6 +25021,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/effect/landmark/start/prisoner,
 /turf/open/floor/plating,
 /area/security/prison/safe)
 "aRa" = (
@@ -28429,6 +28430,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/effect/landmark/start/prisoner,
 /turf/open/floor/plasteel,
 /area/security/prison/safe)
 "aWe" = (
@@ -101942,16 +101944,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
-"epN" = (
-/obj/machinery/power/apc{
-	areastring = "/area/security/prison/safe";
-	dir = 8;
-	name = "Prison Wing Cells APC";
-	pixel_x = -24
-	},
-/obj/structure/cable,
-/turf/open/floor/plasteel,
-/area/security/prison)
 "epU" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -102467,6 +102459,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/mixing/chamber)
+"foA" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/security/prison)
 "foK" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -102670,6 +102668,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/effect/landmark/start/prisoner,
 /turf/open/floor/plasteel,
 /area/security/prison/safe)
 "fLd" = (
@@ -102833,6 +102832,17 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2,
 /turf/open/floor/plasteel,
 /area/crew_quarters/locker)
+"fWD" = (
+/obj/structure/chair/stool,
+/obj/structure/window{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/effect/landmark/start/prisoner,
+/turf/open/floor/plasteel/cafeteria,
+/area/security/prison)
 "fWU" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/costume,
@@ -105814,6 +105824,7 @@
 /obj/structure/chair/stool,
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/obj/effect/landmark/start/prisoner,
 /turf/open/floor/plasteel,
 /area/security/prison)
 "kxT" = (
@@ -107620,6 +107631,26 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard)
+"nrH" = (
+/obj/machinery/button/flasher{
+	id = "Cell 5";
+	name = "Prisoner Flash";
+	pixel_x = 25;
+	pixel_y = 7
+	},
+/obj/machinery/button/door{
+	id = "permashut5";
+	name = "Cell Lockdown Button";
+	pixel_x = 25;
+	pixel_y = -7;
+	req_access_txt = "2"
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/plasteel,
+/area/security/prison)
 "nsp" = (
 /obj/item/reagent_containers/glass/bucket,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
@@ -109410,6 +109441,19 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel,
 /area/crew_quarters/locker)
+"pWB" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/machinery/power/apc{
+	areastring = "/area/security/prison/safe";
+	dir = 8;
+	name = "Prison Wing Cells APC";
+	pixel_x = -24
+	},
+/obj/structure/cable,
+/turf/open/floor/plasteel,
+/area/security/prison)
 "pWC" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -111419,6 +111463,9 @@
 	pixel_x = 27
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/security/prison)
 "tse" = (
@@ -112550,6 +112597,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/port)
+"vqs" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/plasteel,
+/area/security/prison)
 "vqI" = (
 /obj/structure/table,
 /obj/item/clothing/under/suit/black/skirt,
@@ -166233,7 +166287,7 @@ aaa
 pff
 reP
 reP
-epN
+aJA
 reP
 reP
 reP
@@ -166241,7 +166295,7 @@ reP
 npH
 reP
 wtm
-reP
+pWB
 wqW
 qtz
 reP
@@ -166488,10 +166542,10 @@ aaa
 aaa
 aaa
 aFn
-rwB
-rwB
-rwB
-rwB
+foA
+foA
+vqs
+nrH
 tqQ
 rvg
 rwB
@@ -169581,7 +169635,7 @@ yfl
 vXr
 lsG
 pJb
-tKa
+fWD
 wAy
 aMm
 aNH
