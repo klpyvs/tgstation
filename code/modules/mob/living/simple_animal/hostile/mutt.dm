@@ -14,12 +14,12 @@
 	stop_automated_movement_when_pulled = 1
 	stat_attack = SOFT_CRIT
 	robust_searching = 1
-	health = 100
-	maxHealth = 100
-	harm_intent_damage = 5
+	health = 250
+	maxHealth = 250
+	harm_intent_damage = 15
 	obj_damage = 0
-	melee_damage_lower = 10
-	melee_damage_upper = 15
+	melee_damage_lower = 15
+	melee_damage_upper = 20
 	attack_verb_continuous = "bites"
 	attack_verb_simple = "bite"
 	attack_sound = 'sound/weapons/bite.ogg'
