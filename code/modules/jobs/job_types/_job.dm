@@ -65,6 +65,10 @@
 
 	var/bounty_types = CIV_JOB_BASIC
 
+	/// A list(type = weight) list for items which may appear as a gift in the mail system.
+	/// Keep the _job definition for this empty and use /obj/item/mail to define general gifts.
+	var/list/mail_goodies = list()
+
 /datum/job/New()
 	. = ..()
 	var/list/jobs_changes = GetMapChanges()
@@ -319,3 +323,7 @@
 	if(CONFIG_GET(flag/security_has_maint_access))
 		return list(ACCESS_MAINT_TUNNELS)
 	return list()
+
+/// An overridable getter for more dynamic goodies.
+/datum/job/proc/get_mail_goodies(mob/recipient)
+	return mail_goodies

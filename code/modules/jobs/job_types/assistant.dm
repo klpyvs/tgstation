@@ -16,6 +16,11 @@ Assistant
 	paycheck_department = ACCOUNT_CIV
 	display_order = JOB_DISPLAY_ORDER_ASSISTANT
 
+	mail_goodies = list(
+		/obj/item/clothing/mask/gas = 10,
+		/obj/item/clothing/gloves/color/yellow = 5
+	)
+
 /datum/job/assistant/get_access()
 	if(CONFIG_GET(flag/assistants_have_maint_access) || !CONFIG_GET(flag/jobs_have_minimal_access)) //Config has assistant maint access set
 		. = ..()

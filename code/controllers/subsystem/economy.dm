@@ -37,6 +37,13 @@ SUBSYSTEM_DEF(economy)
 	var/earning_report
 	var/market_crashing = FALSE
 
+	/// KF: Total value of exported materials.
+	var/export_total = 0
+	/// KF: Total value of imported goods.
+	var/import_total = 0
+	/// KF: Number of mail items generated.
+	var/mail_waiting = 0
+
 /datum/controller/subsystem/economy/Initialize(timeofday)
 	var/budget_to_hand_out = round(budget_pool / department_accounts.len)
 	for(var/A in department_accounts)
@@ -57,6 +64,7 @@ SUBSYSTEM_DEF(economy)
 	station_target = max(round(temporary_total / max(bank_accounts_by_id.len * 2, 1)) + station_target_buffer, 1)
 	if(!market_crashing)
 		price_update()
+	generate_mail()
 
 /**
   * Handy proc for obtaining a department's bank account, given the department ID, AKA the define assigned for what department they're under.
@@ -104,3 +112,16 @@ SUBSYSTEM_DEF(economy)
 		return 1
 	inflation_value = max(round(((station_total / bank_accounts_by_id.len) / station_target), 0.1), 1.0)
 	return inflation_value
+
+/// KF: Add mail depending on living humans.
+/datum/controller/subsystem/economy/proc/generate_mail()
+	var/mail_recipients = list()
+	for(var/mob/living/carbon/human/H in shuffle(GLOB.alive_mob_list))
+		if(!H.client || H.stat == DEAD)
+			continue
+		mail_recipients += list(H)
+
+	if(LAZYLEN(mail_recipients) == 0)
+		return FALSE
+
+	mail_waiting += rand(MAX(1, FLOOR(LAZYLEN(mail_recipients), 3)), mail_recipients)

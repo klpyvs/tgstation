@@ -16,6 +16,10 @@
 	display_order = JOB_DISPLAY_ORDER_BOTANIST
 	bounty_types = CIV_JOB_GROW
 
+	mail_goodies = list(
+		/obj/item/gun/energy/floragun = 15
+	)
+
 /datum/outfit/job/botanist
 	name = "Botanist"
 	jobtype = /datum/job/hydro

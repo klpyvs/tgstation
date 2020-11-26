@@ -32,3 +32,12 @@
 
 	chameleon_extras = /obj/item/stamp/qm
 
+
+// KF: Mail goodies.
+/datum/job/quartermaster/get_mail_goodies(mob/recipient)
+	. = ..()
+	// Strange Reagent if the pet is dead.
+	for(var/mob/living/simple_animal/sloth/citrus/staff_pet in GLOB.dead_mob_list)
+		. += list(/datum/reagent/medicine/strange_reagent = 20)
+		break
+

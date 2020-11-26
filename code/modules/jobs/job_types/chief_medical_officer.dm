@@ -58,3 +58,11 @@
 	suit_store = /obj/item/tank/internals/oxygen
 	r_pocket = /obj/item/flashlight/pen/paramedic
 
+
+// KF: Mail goodies.
+/datum/job/cmo/get_mail_goodies(mob/recipient)
+	. = ..()
+	// Strange Reagent if the pet is dead.
+	for(var/mob/living/simple_animal/pet/cat/runtime/staff_pet in GLOB.dead_mob_list)
+		. += list(/datum/reagent/medicine/strange_reagent = 20)
+		break
