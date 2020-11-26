@@ -10777,6 +10777,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "atj" = (
@@ -10800,6 +10801,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "atk" = (
@@ -10826,6 +10828,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "atl" = (
@@ -10848,6 +10851,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "atm" = (
@@ -10866,6 +10870,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "atn" = (
@@ -10879,6 +10884,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "ato" = (
@@ -10901,6 +10907,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/maintenance/starboard/fore)
 "atp" = (
@@ -10913,6 +10920,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "atq" = (
@@ -12482,6 +12490,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/maintenance/starboard/fore)
 "avY" = (
@@ -13087,6 +13096,7 @@
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "axf" = (
@@ -13873,6 +13883,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "ayy" = (
@@ -14468,6 +14479,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "azA" = (
@@ -15002,6 +15014,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aAG" = (
@@ -15720,6 +15733,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aBW" = (
@@ -16340,6 +16354,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aDd" = (
@@ -16793,6 +16808,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aEb" = (
@@ -18268,6 +18284,7 @@
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aGB" = (
@@ -19221,6 +19238,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aHU" = (
@@ -19933,6 +19951,14 @@
 /area/hallway/primary/fore)
 "aJf" = (
 /obj/structure/table,
+/obj/item/storage/bag/mail{
+	pixel_x = -2;
+	pixel_y = 5
+	},
+/obj/item/storage/bag/mail{
+	pixel_x = 2;
+	pixel_y = 3
+	},
 /turf/open/floor/plasteel,
 /area/quartermaster/sorting)
 "aJh" = (
@@ -20090,6 +20116,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aJv" = (
@@ -20878,6 +20905,7 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aKQ" = (
@@ -21608,6 +21636,7 @@
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aLY" = (
@@ -22380,6 +22409,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aNv" = (
@@ -23413,6 +23443,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aPa" = (
@@ -24466,6 +24497,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aQN" = (
@@ -25398,6 +25430,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aSp" = (
@@ -26558,6 +26591,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aUc" = (
@@ -26574,6 +26608,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aUd" = (
@@ -26592,6 +26627,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aUe" = (
@@ -26609,6 +26645,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aUf" = (
@@ -26628,6 +26665,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aUg" = (
@@ -27639,7 +27677,6 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aVI" = (
-/obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -27668,7 +27705,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -27693,7 +27729,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -27718,7 +27753,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/cable,
 /obj/effect/turf_decal/bot,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2,
@@ -27728,7 +27762,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -27748,7 +27781,6 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aVN" = (
-/obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -27771,7 +27803,6 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aVO" = (
-/obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -38129,7 +38160,7 @@
 /obj/item/clothing/accessory/armband/deputy,
 /obj/item/clothing/accessory/armband/deputy,
 /obj/item/clothing/accessory/armband/deputy,
-/obj/item/reagent_containers/food/snacks/donut/jelly/choco,
+/obj/item/food/donut/jelly/choco,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
@@ -102319,10 +102350,6 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
-"fbg" = (
-/obj/structure/disposalpipe/segment,
-/turf/closed/wall,
-/area/security/checkpoint/supply)
 "fbz" = (
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
@@ -105600,7 +105627,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/security/checkpoint/supply)
+/area/quartermaster/sorting)
 "jiM" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2,
@@ -107075,7 +107102,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/security/checkpoint/supply)
+/area/quartermaster/sorting)
 "lhu" = (
 /obj/machinery/light{
 	dir = 4
@@ -108339,7 +108366,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/security/checkpoint/supply)
+/area/quartermaster/sorting)
 "mQj" = (
 /obj/structure/disposalpipe/sorting/mail{
 	dir = 1;
@@ -110854,7 +110881,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/security/checkpoint/supply)
+/area/quartermaster/sorting)
 "qhc" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -111368,7 +111395,7 @@
 	dir = 5
 	},
 /turf/closed/wall,
-/area/security/checkpoint/supply)
+/area/quartermaster/sorting)
 "qNG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line{
@@ -112116,6 +112143,7 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "rLt" = (
@@ -112914,7 +112942,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/security/checkpoint/supply)
+/area/quartermaster/sorting)
 "tce" = (
 /obj/machinery/door/airlock/external{
 	name = "Security External Airlock";
@@ -115343,6 +115371,7 @@
 	dir = 8
 	},
 /obj/structure/disposalpipe/segment,
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "wAy" = (
@@ -116460,7 +116489,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/security/checkpoint/supply)
+/area/quartermaster/sorting)
 "yaW" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
@@ -156803,7 +156832,7 @@ leA
 aBN
 aCU
 aDT
-fbg
+aFf
 jiB
 yab
 tbU

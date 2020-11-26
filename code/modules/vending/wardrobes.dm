@@ -126,7 +126,8 @@
 	icon_state = "cargodrobe"
 	product_ads = "Upgraded Assistant Style! Pick yours today!;These shorts are comfy and easy to wear, get yours now!"
 	vend_reply = "Thank you for using the CargoDrobe!"
-	products = list(/obj/item/clothing/suit/hooded/wintercoat/cargo = 3,
+	products = list(/obj/item/storage/bag/mail = 3, // KF: Add mailbag to vending machine.
+					/obj/item/clothing/suit/hooded/wintercoat/cargo = 3,
 					/obj/item/clothing/under/rank/cargo/tech = 3,
 					/obj/item/clothing/under/rank/cargo/tech/skirt = 3,
 					/obj/item/clothing/shoes/sneakers/black = 3,

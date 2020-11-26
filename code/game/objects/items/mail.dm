@@ -11,6 +11,7 @@
 	inhand_icon_state = "paper"
 	worn_icon_state = "paper"
 	item_flags = NOBLUDGEON
+	w_class = WEIGHT_CLASS_SMALL
 	drop_sound = 'sound/items/handling/paper_drop.ogg'
 	pickup_sound =  'sound/items/handling/paper_pickup.ogg'
 	mouse_drag_pointer = MOUSE_ACTIVE_POINTER
@@ -109,7 +110,7 @@
 /// Accepts a mob to initialize goodies for a piece of mail.
 /obj/item/mail/proc/initialize_for_recipient(mob/new_recipient)
 	recipient = new_recipient
-	name = "[initial(name)] for [recipient.name] ([recipient.job])"
+	name = "[initial(name)] for [recipient.real_name] ([recipient.job])"
 	var/list/goodies = generic_goodies
 
 	var/datum/job/this_job = SSjob.name_occupations[recipient.job]
@@ -170,3 +171,23 @@
 		else
 			NM = new /obj/item/mail/envelope(src)
 		NM.initialize_for_recipient(pick(mail_recipients))
+
+/// KF: Mailbag.
+/obj/item/storage/bag/mail
+	name = "mail bag"
+	desc = "A bag for letters, envelopes, and other postage."
+	icon = 'icons/obj/library.dmi'
+	icon_state = "bookbag"
+	worn_icon_state = "bookbag"
+	resistance_flags = FLAMMABLE
+
+/obj/item/storage/bag/mail/ComponentInitialize()
+	. = ..()
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_w_class = WEIGHT_CLASS_NORMAL
+	STR.max_combined_w_class = 21
+	STR.max_items = 21
+	STR.display_numerical_stacking = FALSE
+	STR.set_holdable(list(
+		/obj/item/mail
+	))
