@@ -26,10 +26,10 @@
 		/obj/item/storage/fancy/cigarettes = 15,
 		/obj/item/storage/box/handcuffs = 10,
 		/obj/item/storage/box/teargas = 10,
-		/obj/item/storage/box/flashbangs = 10
+		/obj/item/storage/box/flashbangs = 10,
 		/obj/item/storage/box/rubbershot = 10,
-		/obj/item/storage/box/lethalshot = 5
-		/obj/item/gun/energy/taser = 2
+		/obj/item/storage/box/lethalshot = 5,
+		/obj/item/gun/energy/taser = 2,
 	)
 
 /datum/job/warden/get_access()
