@@ -114,16 +114,20 @@
 	var/list/goodies = generic_goodies
 
 	var/datum/job/this_job = SSjob.name_occupations[recipient.job]
+	// If they don't have a real job they're not crew.
+	// We can add non-crew meme mail later, but for now, this is just broken.
 	if(this_job)
-		var/list/job_goodies = this_job.get_mail_goodies()
-		if(LAZYLEN(job_goodies))
-			goodies += job_goodies
+		return FALSE
+
+	var/list/job_goodies = this_job.get_mail_goodies()
+	if(LAZYLEN(job_goodies))
+		goodies += job_goodies
 
 	for(var/i = 0, i < goodie_count, i++)
 		var/T = pickweight(goodies)
 		if(ispath(T, /datum/reagent))
 			var/obj/item/reagent_containers/TI = new /obj/item/reagent_containers/glass/bottle(src)
-			TI.reagents.add_reagent(T, rand(min(5, TI.volume), TI.volume))
+			TI.reagents.add_reagent(T, TI.volume)
 			TI.name = "[TI.reagents.reagent_list[1].name] bottle"
 			new_recipient.log_message("[key_name(new_recipient)] received reagent container [TI.name] in the mail ([T])", LOG_GAME)
 		else

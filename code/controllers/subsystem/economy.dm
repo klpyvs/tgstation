@@ -124,4 +124,4 @@ SUBSYSTEM_DEF(economy)
 	if(LAZYLEN(mail_recipients) == 0)
 		return FALSE
 
-	mail_waiting += rand(max(1, FLOOR(LAZYLEN(mail_recipients), 10)), max(1, FLOOR(LAZYLEN(mail_recipients), 3)))
+	mail_waiting += rand(1, max(1, FLOOR(LAZYLEN(mail_recipients), 10)))

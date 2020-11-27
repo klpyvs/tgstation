@@ -22,8 +22,14 @@
 	display_order = JOB_DISPLAY_ORDER_SECURITY_OFFICER
 	bounty_types = CIV_JOB_SEC
 
-	// KF: Used instead of user preferences to determine security officer department.
+	/// KF: Used instead of user preferences to determine security officer department.
 	var/department = null
+
+	/// KF: Mail goodies for sec, inherited by department.
+	mail_goodies = list(
+		/obj/item/clothing/mask/whistle = 5,
+		/obj/item/gun/energy/taser = 1
+	)
 
 /datum/job/officer/get_access()
 	var/list/L = list()

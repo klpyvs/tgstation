@@ -21,6 +21,11 @@
 
 	display_order = JOB_DISPLAY_ORDER_DETECTIVE
 
+	/// KF: Mail goodies for sec, inherited by department.
+	mail_goodies = list(
+		/obj/item/gun/energy/taser = 1
+	)
+
 /datum/outfit/job/detective
 	name = "Detective"
 	jobtype = /datum/job/detective
