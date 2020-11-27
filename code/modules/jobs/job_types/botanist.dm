@@ -21,22 +21,8 @@
 		/datum/reagent/saltpetre = 20,
 		/datum/reagent/diethylamine = 20,
 		/obj/item/gun/energy/floragun = 15,
-
-		// Blatantly stolen from lootdrop.dm for rare seeds.
-		/obj/item/seeds/random = 30,
-		/obj/item/seeds/angel = 1,
-		/obj/item/seeds/glowshroom/glowcap = 1,
-		/obj/item/seeds/glowshroom/shadowshroom = 1,
-		/obj/item/seeds/liberty = 5,
-		/obj/item/seeds/nettle/death = 1,
-		/obj/item/seeds/plump/walkingmushroom = 1,
-		/obj/item/seeds/reishi = 5,
-		/obj/item/seeds/cannabis/rainbow = 1,
-		/obj/item/seeds/cannabis/death = 1,
-		/obj/item/seeds/cannabis/white = 1,
-		/obj/item/seeds/cannabis/ultimate = 1,
-		/obj/item/seeds/replicapod = 5,
-		/obj/item/seeds/kudzu = 1
+		// These are 5 rare seeds, so use sparingly.
+		/obj/effect/spawner/lootdrop/space/rareseed = 15
 	)
 
 /datum/outfit/job/botanist

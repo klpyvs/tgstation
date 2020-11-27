@@ -20,11 +20,11 @@
 	bounty_types = CIV_JOB_MED
 
 	mail_goodies = list(
-		/obj/item/reagent_containers/hypospray/medipen = 40,
-		/obj/item/reagent_containers/hypospray/medipen/oxandrolone = 20,
-		/obj/item/reagent_containers/hypospray/medipen/salacid = 20,
-		/obj/item/reagent_containers/hypospray/medipen/salbutamol = 20,
-		/obj/item/reagent_containers/hypospray/medipen/penacid = 20,
+		/obj/item/reagent_containers/hypospray/medipen = 20,
+		/obj/item/reagent_containers/hypospray/medipen/oxandrolone = 10,
+		/obj/item/reagent_containers/hypospray/medipen/salacid = 10,
+		/obj/item/reagent_containers/hypospray/medipen/salbutamol = 10,
+		/obj/item/reagent_containers/hypospray/medipen/penacid = 10,
 		/obj/item/reagent_containers/hypospray/medipen/survival/luxury = 5
 	)
 
