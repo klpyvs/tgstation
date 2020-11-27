@@ -119,7 +119,11 @@ SUBSYSTEM_DEF(economy)
 	for(var/mob/living/carbon/human/H in shuffle(GLOB.alive_mob_list))
 		if(!H.client || H.stat == DEAD)
 			continue
-		mail_recipients += list(H)
+		var/datum/job/this_job = SSjob.name_occupations[H.job]
+		// I would like for antags and other things to get meme mail,
+		// but for now, we just ignore them.
+		if(this_job)
+			mail_recipients += list(H)
 
 	if(LAZYLEN(mail_recipients) == 0)
 		return FALSE

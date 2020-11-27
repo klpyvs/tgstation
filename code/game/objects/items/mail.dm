@@ -21,7 +21,8 @@
 	var/mob/recipient
 	/// how many goodies this mail contains
 	var/goodie_count = 1
-	/// goodies which can be given to anyone
+	/// goodies which can be given to anyone.
+	/// the base weight for cash is 56. for there to be a 50/50 chance of getting a department item, they need 56 weight as well.
 	var/list/generic_goodies = list(
 		/obj/item/stack/spacecash/c100 = 30,
 		/obj/item/stack/spacecash/c200 = 20,
@@ -114,14 +115,10 @@
 	var/list/goodies = generic_goodies
 
 	var/datum/job/this_job = SSjob.name_occupations[recipient.job]
-	// If they don't have a real job they're not crew.
-	// We can add non-crew meme mail later, but for now, this is just broken.
 	if(this_job)
-		return FALSE
-
-	var/list/job_goodies = this_job.get_mail_goodies()
-	if(LAZYLEN(job_goodies))
-		goodies += job_goodies
+		var/list/job_goodies = this_job.get_mail_goodies()
+		if(LAZYLEN(job_goodies))
+			goodies += job_goodies
 
 	for(var/i = 0, i < goodie_count, i++)
 		var/T = pickweight(goodies)
