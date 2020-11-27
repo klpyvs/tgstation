@@ -1,11 +1,11 @@
 // Mail time!
 // https://www.youtube.com/watch?v=-KRtN6-DgrY
 
-/// Mail is tamper-evident and unresealable, postmarked by CentComm for an individual recepient.
+/// Mail is tamper-evident and unresealable, postmarked by CentCom for an individual recepient.
 /obj/item/mail
 	name = "mail"
 	gender = NEUTER
-	desc = "An officially postmarked, tamper-evident parcel regulated by CentComm and made of high-quality materials."
+	desc = "An officially postmarked, tamper-evident parcel regulated by CentCom and made of high-quality materials."
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "mail_small"
 	inhand_icon_state = "paper"
@@ -139,16 +139,16 @@
 
 	return TRUE
 
-/// Crate for mail from CentComm.
+/// Crate for mail from CentCom.
 /obj/structure/closet/crate/mail
 	name = "mail crate"
-	desc = "A certified post crate from CentComm."
+	desc = "A certified post crate from CentCom."
 	icon_state = "mail"
 
 /// Crate for mail that automatically generates a lot of mail.
 /obj/structure/closet/crate/mail/full
 	name = "mail crate"
-	desc = "A certified post crate from CentComm."
+	desc = "A certified post crate from CentCom."
 	icon_state = "mail"
 
 /obj/structure/closet/crate/mail/update_icon_state()
