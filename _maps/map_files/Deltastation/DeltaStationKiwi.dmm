@@ -16792,6 +16792,24 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"aDY" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/box/white{
+	color = "#52B4E9"
+	},
+/obj/machinery/holopad,
+/turf/open/floor/plasteel/dark/telecomms,
+/area/tcommsat/server)
 "aEa" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
@@ -51255,6 +51273,9 @@
 "bOx" = (
 /obj/machinery/holopad,
 /obj/structure/cable,
+/obj/effect/turf_decal/box/white{
+	color = "#52B4E9"
+	},
 /turf/open/floor/plasteel/grimy,
 /area/bridge/meeting_room/council)
 "bOy" = (
@@ -51372,6 +51393,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 9
+	},
+/obj/effect/turf_decal/box/white{
+	color = "#52B4E9"
 	},
 /turf/open/floor/plasteel/grimy,
 /area/tcommsat/computer)
@@ -60905,6 +60929,9 @@
 "cjC" = (
 /obj/machinery/holopad,
 /obj/structure/cable,
+/obj/effect/turf_decal/box/white{
+	color = "#52B4E9"
+	},
 /turf/open/floor/plasteel/grimy,
 /area/crew_quarters/heads/hop)
 "cjD" = (
@@ -68458,7 +68485,9 @@
 /area/ai_monitored/storage/eva)
 "cCS" = (
 /obj/machinery/holopad,
-/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/box/white{
+	color = "#52B4E9"
+	},
 /turf/open/floor/plasteel,
 /area/ai_monitored/storage/eva)
 "cCT" = (
@@ -69578,7 +69607,9 @@
 "cEZ" = (
 /obj/machinery/holopad,
 /obj/structure/cable,
-/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/box/white{
+	color = "#52B4E9"
+	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 9
 	},
@@ -70203,6 +70234,9 @@
 /area/bridge/showroom/corporate)
 "cGs" = (
 /obj/machinery/holopad,
+/obj/effect/turf_decal/box/white{
+	color = "#52B4E9"
+	},
 /turf/open/floor/plasteel/grimy,
 /area/bridge/showroom/corporate)
 "cGt" = (
@@ -74763,6 +74797,9 @@
 	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
+	},
+/obj/effect/turf_decal/box/white{
+	color = "#52B4E9"
 	},
 /turf/open/floor/plasteel,
 /area/science/research)
@@ -103580,6 +103617,9 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
 	dir = 4
 	},
+/obj/effect/turf_decal/box/white{
+	color = "#52B4E9"
+	},
 /turf/open/floor/wood,
 /area/crew_quarters/heads/captain/private)
 "gRL" = (
@@ -110273,7 +110313,9 @@
 "pnl" = (
 /obj/machinery/holopad,
 /obj/structure/cable,
-/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/box/white{
+	color = "#52B4E9"
+	},
 /turf/open/floor/plasteel,
 /area/teleporter)
 "pnP" = (
@@ -114520,6 +114562,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
 	dir = 8
+	},
+/obj/effect/turf_decal/box/white{
+	color = "#52B4E9"
 	},
 /turf/open/floor/wood,
 /area/crew_quarters/heads/captain)
@@ -154628,7 +154673,7 @@ bUF
 pHV
 fZt
 cgm
-ccH
+aDY
 cjG
 xHZ
 cmF

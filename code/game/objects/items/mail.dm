@@ -118,7 +118,11 @@
 	if(this_job)
 		var/list/job_goodies = this_job.get_mail_goodies()
 		if(LAZYLEN(job_goodies))
-			goodies += job_goodies
+			// certain roles and jobs (prisoner) do not receive generic gifts.
+			if(this_job.exclusive_mail_goodies)
+				goodies = job_goodies
+			else
+				goodies += job_goodies
 
 	for(var/i = 0, i < goodie_count, i++)
 		var/T = pickweight(goodies)
@@ -165,9 +169,9 @@
 			continue
 		mail_recipients += list(H)
 
-	for(var/i = 0, i < 20, i++)
+	for(var/i = 0, i < 21, i++)
 		var/obj/item/mail/NM
-		if(rand(0,10) < 7)
+		if(rand(0, 10) < 7)
 			NM = new /obj/item/mail(src)
 		else
 			NM = new /obj/item/mail/envelope(src)
