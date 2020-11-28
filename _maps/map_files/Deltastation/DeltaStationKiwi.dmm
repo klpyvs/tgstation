@@ -46211,23 +46211,6 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2,
 /turf/open/floor/plasteel,
 /area/engine/break_room)
-"bEH" = (
-/obj/structure/disposalpipe/segment,
-/obj/structure/cable,
-/obj/effect/turf_decal/tile/yellow{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/engine/break_room)
 "bEI" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral{
@@ -46245,6 +46228,9 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
 	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 10
 	},
 /turf/open/floor/plasteel,
 /area/engine/break_room)
@@ -47194,8 +47180,8 @@
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "bGm" = (
-/obj/structure/disposalpipe/junction/flip{
-	dir = 2
+/obj/structure/disposalpipe/segment{
+	dir = 6
 	},
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -47206,8 +47192,10 @@
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "bGn" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
+/obj/structure/disposalpipe/sorting/mail{
+	dir = 8;
+	name = "Engineering Junction";
+	sortType = 1
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -50450,9 +50438,6 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
 "bNg" = (
-/obj/structure/sign/poster/official/report_crimes{
-	pixel_y = 32
-	},
 /obj/machinery/vending/wardrobe/det_wardrobe,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
@@ -57758,10 +57743,6 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "ccc" = (
-/obj/structure/disposalpipe/sorting/mail{
-	name = "Engineering Junction";
-	sortType = 4
-	},
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -57772,6 +57753,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/structure/disposalpipe/junction,
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "ccd" = (
@@ -102316,6 +102298,18 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
+"fbe" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/sign/poster/official/report_crimes{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/starboard)
 "fbz" = (
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
@@ -102931,13 +102925,6 @@
 	heat_capacity = 1e+006
 	},
 /area/crew_quarters/toilet/restrooms)
-"fTW" = (
-/obj/structure/sign/departments/science,
-/obj/structure/disposalpipe/sorting/mail/flip{
-	name = "Chemistry Junction"
-	},
-/turf/closed/wall,
-/area/science/lab)
 "fUk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/bot,
@@ -105743,15 +105730,6 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/engine,
 /area/ai_monitored/security/armory)
-"jmj" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable,
-/obj/structure/disposalpipe/sorting/mail{
-	name = "Engineering Junction";
-	sortType = 4
-	},
-/turf/open/floor/plating,
-/area/engine/engineering)
 "jnF" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -111178,24 +111156,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
-"qtw" = (
-/obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/structure/disposalpipe/sorting/mail{
-	name = "Engineering Junction";
-	sortType = 4
-	},
-/turf/open/floor/plasteel,
-/area/engine/engineering)
 "qtz" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4
@@ -113933,27 +113893,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /turf/open/floor/plasteel,
 /area/maintenance/port/fore)
-"urk" = (
-/obj/structure/disposalpipe/segment,
-/obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/structure/disposalpipe/sorting/mail{
-	name = "Engineering Junction";
-	sortType = 4
-	},
-/turf/open/floor/plasteel,
-/area/engine/engineering)
 "urA" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/crate/bin,
@@ -140245,7 +140184,7 @@ bxK
 bzn
 bAV
 bCR
-bEH
+bLT
 bGm
 bHY
 bJZ
@@ -141029,7 +140968,7 @@ bHV
 bHV
 bSl
 cca
-qtw
+cdN
 cfH
 jDu
 jDu
@@ -141299,7 +141238,7 @@ crS
 ctv
 cuW
 cwm
-urk
+kpL
 chA
 kpL
 blf
@@ -142053,7 +141992,7 @@ bOd
 bzg
 bSl
 bUd
-jmj
+bWt
 bWt
 bSl
 cce
@@ -154170,7 +154109,7 @@ cZq
 cZo
 cZm
 cZo
-fTW
+cZl
 dgR
 din
 sDg
@@ -165953,7 +165892,7 @@ bNh
 bHr
 bHr
 bHr
-lUa
+fbe
 bXx
 bZH
 cbp
