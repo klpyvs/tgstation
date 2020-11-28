@@ -32614,7 +32614,7 @@
 	pixel_y = -29
 	},
 /obj/structure/bed/dogbed/mutt,
-/mob/living/simple_animal/hostile/mutt/captains,
+/mob/living/simple_animal/hostile/retaliate/mutt/captains,
 /turf/open/floor/carpet,
 /area/crew_quarters/heads/captain/private)
 "bAf" = (

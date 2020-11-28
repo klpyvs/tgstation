@@ -49833,7 +49833,7 @@
 /area/tcommsat/computer)
 "bQP" = (
 /obj/structure/bed/dogbed/mutt,
-/mob/living/simple_animal/hostile/mutt/captains,
+/mob/living/simple_animal/hostile/retaliate/mutt/captains,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
