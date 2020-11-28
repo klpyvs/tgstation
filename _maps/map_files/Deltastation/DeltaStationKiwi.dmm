@@ -39294,6 +39294,7 @@
 	pixel_y = -32;
 	use_power = 0
 	},
+/obj/item/defibrillator/loaded,
 /turf/open/floor/plasteel/white,
 /area/security/brig)
 "brm" = (
@@ -104830,9 +104831,8 @@
 "ipf" = (
 /obj/structure/table/glass,
 /obj/machinery/computer/med_data/laptop{
-	dir = 4;
-	pixel_x = 3;
-	pixel_y = 2
+	dir = 1;
+	pixel_y = 4
 	},
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /turf/open/floor/plasteel/white,
@@ -110805,6 +110805,16 @@
 "pWe" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
+	},
+/obj/structure/table/glass,
+/obj/item/storage/firstaid/fire{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/storage/firstaid/toxin,
+/obj/item/storage/firstaid/brute{
+	pixel_x = -3;
+	pixel_y = -3
 	},
 /turf/open/floor/plasteel/white,
 /area/security/brig)
