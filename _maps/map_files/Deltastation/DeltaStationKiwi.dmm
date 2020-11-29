@@ -65957,20 +65957,6 @@
 	heat_capacity = 1e+006
 	},
 /area/maintenance/starboard)
-"cxu" = (
-/obj/structure/cable,
-/obj/effect/turf_decal/delivery,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/maintenance/starboard)
 "cxw" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral{
@@ -66660,17 +66646,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small,
 /obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/maintenance/starboard)
-"cze" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
@@ -70270,11 +70245,18 @@
 /turf/open/floor/plating,
 /area/crew_quarters/toilet/restrooms)
 "cGL" = (
-/obj/machinery/vending/autodrobe,
-/obj/machinery/newscaster{
-	pixel_y = -32
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
 	},
-/turf/open/floor/plasteel,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/vending/autodrobe,
+/turf/open/floor/plasteel/dark,
 /area/crew_quarters/dorms)
 "cGM" = (
 /obj/item/radio/intercom{
@@ -106062,6 +106044,20 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+"jID" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/delivery,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/space)
 "jIP" = (
 /obj/structure/bed,
 /obj/effect/decal/cleanable/cobweb,
@@ -109049,6 +109045,9 @@
 /obj/structure/lattice,
 /turf/closed/wall/r_wall,
 /area/engine/gravity_generator)
+"nzg" = (
+/turf/closed/wall,
+/area/space)
 "nAj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/hydroponics/constructable,
@@ -114844,6 +114843,9 @@
 /area/engine/storage_shared)
 "vxV" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
 "vyv" = (
@@ -115541,6 +115543,17 @@
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/starboard/fore)
+"wvl" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/space)
 "wyC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cobweb,
@@ -115705,7 +115718,7 @@
 /area/hallway/primary/central)
 "wIo" = (
 /obj/structure/disposalpipe/segment{
-	dir = 10
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
@@ -168422,7 +168435,7 @@ vvG
 uJW
 iJQ
 bHq
-cxt
+cni
 coI
 cAw
 cCh
@@ -168679,8 +168692,8 @@ bHq
 cti
 bHq
 bHq
-cxu
-cze
+cxt
+coI
 cAw
 cCi
 cDI
@@ -168935,9 +168948,9 @@ clA
 aad
 aad
 aaa
-aaa
-aaa
-aaa
+nzg
+jID
+wvl
 cAw
 cCj
 cDI
