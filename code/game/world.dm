@@ -277,20 +277,20 @@ GLOBAL_VAR(restart_counter)
 
 /world/proc/update_status()
 	var/s = ""
-	var/hostedby
 	if(config)
 		var/server_name = CONFIG_GET(string/servername)
 		if (server_name)
 			s += "<b>[server_name]</b> &#8212; "
 
-	s += "<b>[station_name()]</b> (/tg/ fork)<br>"
+	s += "<b>[station_name()]</b>";
 
 	if(config)
 		var/server_desc = CONFIG_GET(string/serverdesc)
 		if (server_desc)
 			s += server_desc
 
-	game_state = (CONFIG_GET(number/extreme_popcap) && players >= CONFIG_GET(number/extreme_popcap)) //tells the hub if we are full
+	game_state = (CONFIG_GET(number/extreme_popcap) && GLOB.clients.len >= CONFIG_GET(number/extreme_popcap)) //tells the hub if we are full
+
 	status = s
 
 /world/proc/update_hub_visibility(new_visibility)
