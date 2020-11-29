@@ -47149,7 +47149,7 @@
 /obj/structure/disposalpipe/sorting/mail{
 	dir = 8;
 	name = "Engineering Junction";
-	sortType = 1
+	sortType = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
