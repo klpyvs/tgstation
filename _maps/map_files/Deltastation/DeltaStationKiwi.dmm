@@ -2106,6 +2106,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel/white,
 /area/medical/sleeper)
 "adW" = (
@@ -2628,6 +2629,7 @@
 /obj/effect/mapping_helpers/airlock/unres{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel/white,
 /area/medical/sleeper)
 "aeO" = (
@@ -44462,7 +44464,6 @@
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "bBI" = (
-/obj/item/beacon,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -44476,6 +44477,10 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/holopad,
+/obj/effect/turf_decal/box/white{
+	color = "#52B4E9"
 	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
@@ -104786,6 +104791,16 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/dark,
 /area/bridge)
+"isq" = (
+/obj/structure/window/reinforced,
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/item/beacon,
+/turf/open/floor/plasteel/dark,
+/area/bridge)
 "isL" = (
 /obj/structure/table,
 /obj/item/paper_bin,
@@ -107379,6 +107394,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/security/checkpoint/medical)
 "lzP" = (
@@ -107783,10 +107799,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/science/misc_lab/range)
-"lXY" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning,
-/turf/open/floor/plasteel/white,
-/area/medical/sleeper)
 "lYb" = (
 /turf/open/floor/plasteel/white,
 /area/medical/pharmacy)
@@ -111839,6 +111851,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/corner{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "rfe" = (
@@ -154762,7 +154775,7 @@ bwR
 byl
 bDB
 bBI
-bDH
+isq
 bFu
 bHe
 bIQ
@@ -162007,7 +162020,7 @@ aeg
 aeo
 aey
 qdq
-afn
+aeQ
 ahd
 ags
 agx
@@ -162264,7 +162277,7 @@ ael
 afa
 afj
 afl
-aeQ
+afn
 afM
 dkA
 cNA
@@ -162775,8 +162788,8 @@ adp
 aRB
 aRB
 ael
-acw
-lXY
+afa
+afj
 aeN
 rfc
 afM
