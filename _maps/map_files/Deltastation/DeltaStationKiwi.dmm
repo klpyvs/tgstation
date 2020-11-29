@@ -96,7 +96,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/mutt/captains,
+/mob/living/simple_animal/hostile/retaliate/mutt/captains,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/captain)
 "aal" = (
@@ -13217,7 +13217,7 @@
 /turf/open/floor/engine,
 /area/engine/supermatter)
 "axx" = (
-/obj/machinery/power/rad_collector/anchored/delta,
+/obj/machinery/power/rad_collector/anchored,
 /obj/structure/window/plasma/reinforced{
 	dir = 4
 	},
@@ -13243,7 +13243,7 @@
 /turf/open/floor/engine,
 /area/engine/supermatter)
 "axB" = (
-/obj/machinery/power/rad_collector/anchored/delta,
+/obj/machinery/power/rad_collector/anchored,
 /obj/structure/window/plasma/reinforced{
 	dir = 8
 	},
@@ -13258,6 +13258,7 @@
 	c_tag = "Supermatter Chamber";
 	network = list("engine")
 	},
+/obj/structure/cable,
 /turf/open/floor/engine,
 /area/engine/supermatter)
 "axD" = (
@@ -14634,7 +14635,7 @@
 /turf/open/floor/plating,
 /area/engine/supermatter)
 "azT" = (
-/obj/machinery/power/rad_collector/anchored/delta,
+/obj/machinery/power/rad_collector/anchored,
 /obj/structure/window/plasma/reinforced{
 	dir = 4
 	},
@@ -14645,7 +14646,7 @@
 /turf/open/floor/circuit/green,
 /area/engine/supermatter)
 "azU" = (
-/obj/machinery/power/rad_collector/anchored/delta,
+/obj/machinery/power/rad_collector/anchored,
 /obj/structure/window/plasma/reinforced{
 	dir = 8
 	},
@@ -60609,7 +60610,7 @@
 /turf/open/floor/plating,
 /area/engine/engineering)
 "cje" = (
-/obj/machinery/power/rad_collector/anchored/delta,
+/obj/machinery/power/rad_collector/anchored,
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -67356,7 +67357,7 @@
 /turf/open/space,
 /area/space/nearstation)
 "cAK" = (
-/obj/machinery/power/rad_collector/anchored/delta,
+/obj/machinery/power/rad_collector/anchored,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/line{
@@ -140844,9 +140845,9 @@ asr
 atP
 auY
 awg
-axz
 axw
-axz
+axw
+axw
 awg
 aCk
 aDo
@@ -142388,7 +142389,7 @@ ave
 awg
 axC
 axw
-axz
+axw
 awg
 vwb
 aDr
