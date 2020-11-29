@@ -49369,12 +49369,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard)
-"bLf" = (
-/obj/structure/cable,
-/obj/effect/spawner/lootdrop/maintenance/five,
-/obj/structure/closet,
-/turf/open/floor/plating,
-/area/maintenance/starboard)
 "bLi" = (
 /obj/structure/closet/secure_closet/detective,
 /obj/item/clothing/head/fedora/det_hat{
@@ -81859,6 +81853,9 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
+/obj/machinery/firealarm{
+	pixel_y = 26
+	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "dhq" = (
@@ -102144,6 +102141,11 @@
 	},
 /turf/open/floor/grass,
 /area/crew_quarters/lounge)
+"ePI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/blobstart,
+/turf/open/floor/plating,
+/area/maintenance/starboard)
 "eQJ" = (
 /obj/effect/landmark/event_spawn,
 /obj/effect/decal/cleanable/dirt,
@@ -103523,12 +103525,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
-"gTX" = (
-/obj/structure/cable,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/blobstart,
-/turf/open/floor/plating,
-/area/maintenance/starboard)
 "gUh" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -106101,10 +106097,8 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_x = 0;
-	pixel_y = 26
+/obj/effect/turf_decal/trimline/blue/filled/corner{
+	dir = 1
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
@@ -109862,12 +109856,6 @@
 /obj/effect/spawner/lootdrop/maintenance/seven,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
-"oPz" = (
-/obj/structure/cable,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/cobweb/cobweb2,
-/turf/open/floor/plating,
-/area/maintenance/starboard)
 "oPQ" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -111827,16 +111815,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
-"rfc" = (
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/blue/filled/corner{
-	dir = 1
-	},
-/obj/structure/cable,
-/turf/open/floor/plasteel/white,
-/area/medical/medbay/central)
 "rfe" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -115621,8 +115599,8 @@
 /turf/open/floor/plasteel/white,
 /area/maintenance/department/science)
 "wBP" = (
-/obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/structure/cable,
+/obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "wCc" = (
@@ -161749,7 +161727,7 @@ aed
 aen
 xAi
 vTA
-aeP
+cPv
 afM
 dky
 dfG
@@ -162006,7 +161984,7 @@ aeg
 aeo
 aey
 qdq
-aeQ
+aeP
 ahd
 ags
 agx
@@ -162777,7 +162755,7 @@ ael
 afa
 afj
 aeN
-rfc
+afn
 afM
 dkv
 dro
@@ -164528,8 +164506,8 @@ aaa
 aad
 bHq
 wBP
-gTX
-oPz
+lVV
+lVV
 bJe
 bHq
 bHq
@@ -164785,10 +164763,10 @@ cti
 cti
 bHq
 bJe
-coI
+ePI
 iYP
 mtH
-bLf
+sGu
 bHq
 bHq
 bHq
