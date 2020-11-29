@@ -80,6 +80,17 @@ GLOBAL_LIST_INIT(position_categories, list(
 	EXP_TYPE_SECURITY = list("jobs" = security_positions, "color" = "#ffdddd")
 ))
 
+// KF: Strong color typing for departments.
+GLOBAL_LIST_INIT(department_colors, list(
+	ACCOUNT_CIV = COLOR_WHITE,
+	ACCOUNT_ENG = COLOR_PALE_ORANGE,
+	ACCOUNT_SCI = COLOR_PALE_PURPLE_GRAY,
+	ACCOUNT_MED = COLOR_PALE_BLUE_GRAY,
+	ACCOUNT_SRV = COLOR_PALE_GREEN_GRAY,
+	ACCOUNT_CAR = COLOR_BEIGE,
+	ACCOUNT_SEC = COLOR_PALE_RED_GRAY,
+))
+
 GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_CREW = list("titles" = command_positions | engineering_positions | medical_positions | science_positions | supply_positions | security_positions | service_positions | list("AI","Cyborg")), // crew positions
 	EXP_TYPE_COMMAND = list("titles" = command_positions),

@@ -62,20 +62,27 @@
 
 	var/bonus_stamp_offset = 0
 	for(var/S in stamps)
-		add_overlay(image(
+		var/image/SI = image(
 			icon = icon,
 			icon_state = S,
 			pixel_x = stamp_offset_x,
 			pixel_y = stamp_offset_y + bonus_stamp_offset
-		))
+		)
+		// Stops postmarks from inheriting letter color.
+		// http://www.byond.com/docs/ref/#/atom/var/appearance_flags
+		SI.appearance_flags |= RESET_COLOR
+		add_overlay(SI)
 		bonus_stamp_offset -= 5
+
 	if(postmarked == TRUE)
-		add_overlay(image(
+		var/image/PMI = image(
 			icon = icon,
 			icon_state = "postmark",
 			pixel_x = stamp_offset_x + rand(-3, 1),
 			pixel_y = stamp_offset_y + rand(bonus_stamp_offset + 3, 1)
-		))
+		)
+		PMI.appearance_flags |= RESET_COLOR
+		add_overlay(PMI)
 
 /obj/item/mail/attackby(obj/item/W, mob/user, params)
 	// Destination tagging
@@ -116,6 +123,8 @@
 
 	var/datum/job/this_job = SSjob.name_occupations[recipient.job]
 	if(this_job)
+		if(this_job.paycheck_department && GLOB.department_colors[this_job.paycheck_department])
+			color = GLOB.department_colors[this_job.paycheck_department]
 		var/list/job_goodies = this_job.get_mail_goodies()
 		if(LAZYLEN(job_goodies))
 			// certain roles and jobs (prisoner) do not receive generic gifts.
