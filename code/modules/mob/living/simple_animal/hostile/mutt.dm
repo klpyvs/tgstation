@@ -30,6 +30,8 @@
 	environment_smash = ENVIRONMENT_SMASH_NONE
 	move_to_delay = 1
 	charger = TRUE
+	pet_bonus = TRUE
+	pet_bonus_emote = "slobbers enthusiastically!"
 
 /mob/living/simple_animal/hostile/retaliate/mutt/add_cell_sample()
 	AddElement(/datum/element/swabable, CELL_LINE_TABLE_PUG, CELL_VIRUS_TABLE_GENERIC_MOB, 1, 5)
@@ -44,6 +46,7 @@
 
 /mob/living/simple_animal/hostile/retaliate/mutt/captains/ListTargets()
 	. = ..()
+
 	// Slobbermutt hunts for two targets:
 	// 1. Anyone holding the disk (filtered by CanAttack later).
 	var/turf/OT = get_turf(src)
