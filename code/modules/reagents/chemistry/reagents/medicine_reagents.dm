@@ -785,11 +785,26 @@
 		return
 	if(iscarbon(exposed_mob) && !(methods & INGEST)) //simplemobs can still be splashed
 		return ..()
-	var/amount_to_revive = round((exposed_mob.getBruteLoss()+exposed_mob.getFireLoss())/20)
-	if(exposed_mob.getBruteLoss()+exposed_mob.getFireLoss() >= 200 || HAS_TRAIT(exposed_mob, TRAIT_HUSK) || reac_volume < amount_to_revive) //body will die from brute+burn on revive or you haven't provided enough to revive.
+
+	// KF: Replace amount_to_revive with a static 5, to make it easier, because math is hard.
+	//var/amount_to_revive = round((exposed_mob.getBruteLoss()+exposed_mob.getFireLoss())/20)
+	var/amount_to_revive = 5
+	//if(exposed_mob.getBruteLoss()+exposed_mob.getFireLoss() >= 200 || HAS_TRAIT(exposed_mob, TRAIT_HUSK) || reac_volume < amount_to_revive) //body will die from brute+burn on revive or you haven't provided enough to revive.
+	if(reac_volume < amount_to_revive)
 		exposed_mob.visible_message("<span class='warning'>[exposed_mob]'s body convulses a bit, and then falls still once more.</span>")
 		exposed_mob.do_jitter_animation(10)
 		return
+	// Remove excessive damages.
+	if(exposed_mob.getBruteLoss() > 90)
+		exposed_mob.adjustBruteLoss(-(exposed_mob.getBruteLoss() - 90))
+	if(exposed_mob.getFireLoss() > 90)
+		exposed_mob.adjustFireLoss(-(exposed_mob.getFireLoss() - 90))
+	// Remove husking.
+	if(HAS_TRAIT_FROM(exposed_mob, TRAIT_HUSK, BURN))
+		exposed_mob.cure_husk(BURN)
+	if(HAS_TRAIT_FROM(exposed_mob, TRAIT_HUSK, CHANGELING_DRAIN))
+		exposed_mob.cure_husk(CHANGELING_DRAIN)
+	// Revive.
 	exposed_mob.visible_message("<span class='warning'>[exposed_mob]'s body starts convulsing!</span>")
 	exposed_mob.notify_ghost_cloning("Your body is being revived with Strange Reagent!")
 	exposed_mob.do_jitter_animation(10)
