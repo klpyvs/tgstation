@@ -26859,6 +26859,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "aUC" = (
@@ -69623,9 +69626,6 @@
 "cFq" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/machinery/light{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
@@ -108133,6 +108133,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/execution/transfer)
+"mtO" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
 "muk" = (
 /obj/structure/table/wood,
 /obj/item/taperecorder,
@@ -165822,7 +165828,7 @@ crt
 eIk
 klg
 fVu
-cDy
+mtO
 cDy
 cKT
 cJj
