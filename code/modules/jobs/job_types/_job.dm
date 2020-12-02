@@ -65,6 +65,13 @@
 
 	var/bounty_types = CIV_JOB_BASIC
 
+	/// KF: Goodies that can be received via the mail system.
+	// A list(type = weight) list for items.
+	/// Keep the _job definition for this empty and use /obj/item/mail to define general gifts.
+	var/list/mail_goodies = list()
+	/// KF: If this job's mail goodies compete with generic goodies.
+	var/exclusive_mail_goodies = FALSE
+
 /datum/job/New()
 	. = ..()
 	var/list/jobs_changes = GetMapChanges()
@@ -193,8 +200,8 @@
 	return TRUE
 
 /**
-  * Gets the changes dictionary made to the job template by the map config. Returns null if job is removed.
-  */
+ * Gets the changes dictionary made to the job template by the map config. Returns null if job is removed.
+ */
 /datum/job/proc/GetMapChanges()
 	var/string_type = "[type]"
 	var/list/splits = splittext(string_type, "/")
@@ -319,3 +326,7 @@
 	if(CONFIG_GET(flag/security_has_maint_access))
 		return list(ACCESS_MAINT_TUNNELS)
 	return list()
+
+/// An overridable getter for more dynamic goodies.
+/datum/job/proc/get_mail_goodies(mob/recipient)
+	return mail_goodies

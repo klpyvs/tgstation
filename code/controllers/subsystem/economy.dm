@@ -37,6 +37,13 @@ SUBSYSTEM_DEF(economy)
 	var/earning_report
 	var/market_crashing = FALSE
 
+	/// KF: Total value of exported materials.
+	var/export_total = 0
+	/// KF: Total value of imported goods.
+	var/import_total = 0
+	/// KF: Number of mail items generated.
+	var/mail_waiting = 0
+
 /datum/controller/subsystem/economy/Initialize(timeofday)
 	var/budget_to_hand_out = round(budget_pool / department_accounts.len)
 	for(var/A in department_accounts)
@@ -57,19 +64,20 @@ SUBSYSTEM_DEF(economy)
 	station_target = max(round(temporary_total / max(bank_accounts_by_id.len * 2, 1)) + station_target_buffer, 1)
 	if(!market_crashing)
 		price_update()
+	generate_mail()
 
 /**
-  * Handy proc for obtaining a department's bank account, given the department ID, AKA the define assigned for what department they're under.
-  */
+ * Handy proc for obtaining a department's bank account, given the department ID, AKA the define assigned for what department they're under.
+ */
 /datum/controller/subsystem/economy/proc/get_dep_account(dep_id)
 	for(var/datum/bank_account/department/D in generated_accounts)
 		if(D.department_id == dep_id)
 			return D
 
 /**
-  * Departmental income payments are kept static and linear for every department, and paid out once every 5 minutes, as determined by MAX_GRANT_DPT.
-  * Iterates over every department account for the same payment.
-  */
+ * Departmental income payments are kept static and linear for every department, and paid out once every 5 minutes, as determined by MAX_GRANT_DPT.
+ * Iterates over every department account for the same payment.
+ */
 /datum/controller/subsystem/economy/proc/departmental_payouts()
 	for(var/iteration in department_accounts)
 		var/datum/bank_account/dept_account = get_dep_account(iteration)
@@ -78,10 +86,10 @@ SUBSYSTEM_DEF(economy)
 		dept_account.adjust_money(MAX_GRANT_DPT)
 
 /**
-  * Updates the prices of all station vendors with the inflation_value, increasing/decreasing costs across the station, and alerts the crew.
-  *
-  * Iterates over the machines list for vending machines, resets their regular and premium product prices (Not contraband), and sends a message to the newscaster network.
-  **/
+ * Updates the prices of all station vendors with the inflation_value, increasing/decreasing costs across the station, and alerts the crew.
+ *
+ * Iterates over the machines list for vending machines, resets their regular and premium product prices (Not contraband), and sends a message to the newscaster network.
+ **/
 /datum/controller/subsystem/economy/proc/price_update()
 	for(var/obj/machinery/vending/V in GLOB.machines)
 		if(istype(V, /obj/machinery/vending/custom))
@@ -93,14 +101,31 @@ SUBSYSTEM_DEF(economy)
 	GLOB.news_network.SubmitArticle(earning_report, "Station Earnings Report", "Station Announcements", null, update_alert = FALSE)
 
 /**
-  * Proc that returns a value meant to shift inflation values in vendors, based on how much money exists on the station.
-  *
-  * If crew are somehow aquiring far too much money, this value will dynamically cause vendables across the station to skyrocket in price until some money is spent.
-  * Additionally, civilain bounties will cost less, and cargo goodies will increase in price as well.
-  * The goal here is that if you want to spend money, you'll have to get it, and the most efficient method is typically from other players.
-  **/
+ * Proc that returns a value meant to shift inflation values in vendors, based on how much money exists on the station.
+ *
+ * If crew are somehow aquiring far too much money, this value will dynamically cause vendables across the station to skyrocket in price until some money is spent.
+ * Additionally, civilain bounties will cost less, and cargo goodies will increase in price as well.
+ * The goal here is that if you want to spend money, you'll have to get it, and the most efficient method is typically from other players.
+ **/
 /datum/controller/subsystem/economy/proc/inflation_value()
 	if(!bank_accounts_by_id.len)
 		return 1
 	inflation_value = max(round(((station_total / bank_accounts_by_id.len) / station_target), 0.1), 1.0)
 	return inflation_value
+
+/// KF: Add mail depending on living humans.
+/datum/controller/subsystem/economy/proc/generate_mail()
+	var/mail_recipients = list()
+	for(var/mob/living/carbon/human/H in shuffle(GLOB.alive_mob_list))
+		if(!H.client || H.stat == DEAD)
+			continue
+		var/datum/job/this_job = SSjob.name_occupations[H.job]
+		// I would like for antags and other things to get meme mail,
+		// but for now, we just ignore them.
+		if(this_job)
+			mail_recipients += list(H)
+
+	if(LAZYLEN(mail_recipients) == 0)
+		return FALSE
+
+	mail_waiting += 1 //rand(1, max(1, CEILING(LAZYLEN(mail_recipients), 20)))
