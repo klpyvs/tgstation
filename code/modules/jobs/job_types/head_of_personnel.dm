@@ -61,10 +61,9 @@
 		undershirt = /datum/sprite_accessory/undershirt/ian
 
 
-// KF: Mail goodies.
+/// KF: Dynamic mail goodies, adds strange reagent if the staff pet is dead..
 /datum/job/hop/get_mail_goodies(mob/recipient)
 	. = ..()
-	// Strange Reagent if the pet is dead.
-	for(var/mob/living/simple_animal/pet/dog/corgi/ian/staff_pet in GLOB.dead_mob_list)
+	var/mob/living/simple_animal/pet/dog/corgi/ian/dead_pet = locate() in GLOB.dead_mob_list
+	if(dead_pet)
 		. += list(/datum/reagent/medicine/strange_reagent = 20)
-		break

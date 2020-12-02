@@ -246,11 +246,11 @@ GLOBAL_LIST_INIT(blacklisted_cargo_types, typecacheof(list(
 		return FALSE
 
 	var/list/mail = list()
-	var/obj/structure/closet/crate/mail/mailcrate = new /obj/structure/closet/crate/mail
-	for(var/MI = 0, MI < SSeconomy.mail_waiting, MI++)
-		var/obj/item/mail/NM = new /obj/item/mail(mailcrate)
-		NM.initialize_for_recipient(pick(mail_recipients))
-		mail += list(NM)
+	var/obj/structure/closet/crate/mail/mailcrate = new ()
+	for(var/i in 1 to SSeconomy.mail_waiting)
+		var/obj/item/mail/new_mail = new /obj/item/mail(mailcrate)
+		new_mail.initialize_for_recipient(pick(mail_recipients))
+		mail += list(new_mail)
 
 	mailcrate.update_icon()
 	SSeconomy.mail_waiting = 0
