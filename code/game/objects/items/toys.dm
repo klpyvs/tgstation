@@ -447,7 +447,6 @@
 	name = "double-bladed toy sword"
 	desc = "A cheap, plastic replica of TWO energy swords.  Double the fun!"
 	force = 0
-	armor_penetration = 100
 	throwforce = 0
 	throw_speed = 5
 	throw_range = 5
