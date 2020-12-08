@@ -174,7 +174,8 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 				if(A.sound_environment != SOUND_ENVIRONMENT_NONE)
 					S.environment = A.sound_environment
 
-		if(use_reverb && S.environment != SOUND_ENVIRONMENT_NONE) //We have reverb, reset our echo setting
+		// KF: Added CONFIG_GET to disable this.
+		if(!CONFIG_GET(flag/disable_sound_reverb) && use_reverb && S.environment != SOUND_ENVIRONMENT_NONE) //We have reverb, reset our echo setting
 			S.echo[3] = 0 //Room setting, 0 means normal reverb
 			S.echo[4] = 0 //RoomHF setting, 0 means normal reverb.
 
